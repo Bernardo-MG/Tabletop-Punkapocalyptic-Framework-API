@@ -10,4 +10,6 @@ public interface PunkapocalypticLocalizationService {
 
     public String getUnitNameString(final String unit);
 
+    public String getWeaponString(final String weapon);
+
 }
