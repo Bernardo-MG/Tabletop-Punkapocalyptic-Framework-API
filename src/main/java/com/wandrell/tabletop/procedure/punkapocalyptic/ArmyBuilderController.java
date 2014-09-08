@@ -11,4 +11,6 @@ public interface ArmyBuilderController {
 
     public UnitConfigurationController getUnitConfigurationController();
 
+    public void removeUnit(final AvailabilityUnit unit);
+
 }
