@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.data.dao.punkapocalyptic;
+package com.wandrell.tabletop.data.persistence.punkapocalyptic;
 
 import java.util.Collection;
 

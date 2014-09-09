@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.data.dao.punkapocalyptic;
+package com.wandrell.tabletop.data.persistence.punkapocalyptic;
 
 import com.wandrell.tabletop.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.model.punkapocalyptic.ruleset.UnitConstraint;
