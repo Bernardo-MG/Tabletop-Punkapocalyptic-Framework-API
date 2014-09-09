@@ -1,9 +1,9 @@
-package com.wandrell.tabletop.procedure.punkapocalyptic;
+package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.model.punkapocalyptic.unit.AvailabilityUnit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
 
 public interface UnitConfigurationController {
 

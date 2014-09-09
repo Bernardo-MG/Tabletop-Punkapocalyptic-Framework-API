@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.data.persistence.punkapocalyptic;
 
-import com.wandrell.tabletop.model.punkapocalyptic.inventory.Armor;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 
 public interface ArmorDAO {
 

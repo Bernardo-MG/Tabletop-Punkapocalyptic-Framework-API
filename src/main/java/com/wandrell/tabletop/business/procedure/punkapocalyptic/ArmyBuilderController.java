@@ -1,7 +1,7 @@
-package com.wandrell.tabletop.procedure.punkapocalyptic;
+package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
-import com.wandrell.tabletop.model.punkapocalyptic.unit.AvailabilityUnit;
-import com.wandrell.tabletop.model.punkapocalyptic.unit.Band;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Band;
 
 public interface ArmyBuilderController {
 

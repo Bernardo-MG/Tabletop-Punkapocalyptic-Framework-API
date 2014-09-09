@@ -1,7 +1,7 @@
 package com.wandrell.tabletop.data.persistence.punkapocalyptic;
 
-import com.wandrell.tabletop.model.punkapocalyptic.ruleset.SpecialRule;
-import com.wandrell.tabletop.model.punkapocalyptic.ruleset.UnitConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.UnitConstraint;
 
 public interface RulesetDAO {
 
