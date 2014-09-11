@@ -1,9 +1,9 @@
 package com.wandrell.tabletop.business.service.punkapocalyptic;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Band;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
 public interface PunkapocalypticFileService {
 
-    public void saveBand(final Band band);
+    public void saveGang(final Gang band);
 
 }
