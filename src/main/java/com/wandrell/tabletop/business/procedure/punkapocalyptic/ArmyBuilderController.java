@@ -1,16 +1,12 @@
 package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.business.procedure.ProcedureValidator;
 
-public interface ArmyBuilderController {
+public interface ArmyBuilderController extends ProcedureValidator {
 
-    public void addUnit(final AvailabilityUnit unit);
-
-    public Gang getBand();
+    public Gang getGang();
 
     public UnitConfigurationController getUnitConfigurationController();
-
-    public void removeUnit(final AvailabilityUnit unit);
 
 }
