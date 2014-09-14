@@ -1,9 +1,9 @@
 package com.wandrell.tabletop.business.util.tag.punkapocalyptic.service;
 
-import com.wandrell.tabletop.business.service.punkapocalyptic.PunkapocalypticFileService;
+import com.wandrell.tabletop.business.service.punkapocalyptic.FileService;
 
 public interface FileServiceAware {
 
-    public void setFileService(final PunkapocalypticFileService service);
+    public void setFileService(final FileService service);
 
 }

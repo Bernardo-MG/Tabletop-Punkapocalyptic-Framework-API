@@ -1,14 +1,18 @@
 package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
-import java.util.Collection;
-
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
 import com.wandrell.tabletop.business.procedure.ProcedureValidator;
+import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.UnitConfigurationListener;
 
 public interface UnitConfigurationController extends ProcedureValidator {
 
-    public Collection<Weapon> getWeaponsSelection();
+    public void addUnitConfigurationListener(
+            final UnitConfigurationListener listener);
+
+    public AvailabilityUnit getUnit();
+
+    public void removeUnitConfigurationListener(
+            final UnitConfigurationListener listener);
 
     public void setUnit(final AvailabilityUnit unit);
 

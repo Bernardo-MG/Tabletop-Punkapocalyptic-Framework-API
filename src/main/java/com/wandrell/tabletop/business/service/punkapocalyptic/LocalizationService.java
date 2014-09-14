@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.service.punkapocalyptic;
 
-public interface PunkapocalypticLocalizationService {
+public interface LocalizationService {
 
     public String getArmorString(final String armor);
 
