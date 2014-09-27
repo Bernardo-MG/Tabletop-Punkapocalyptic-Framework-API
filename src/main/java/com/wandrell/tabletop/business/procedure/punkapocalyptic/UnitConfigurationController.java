@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.AvailabilityUnit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.AvailabilityUnit;
 import com.wandrell.tabletop.business.procedure.ProcedureValidator;
 import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.UnitConfigurationListener;
 
