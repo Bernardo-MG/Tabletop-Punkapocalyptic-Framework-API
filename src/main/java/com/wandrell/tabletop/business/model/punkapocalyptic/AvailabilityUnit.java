@@ -18,7 +18,9 @@ package com.wandrell.tabletop.business.model.punkapocalyptic;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
+import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
@@ -48,6 +50,13 @@ public interface AvailabilityUnit extends Unit {
     public Collection<GangConstraint> getConstraints();
 
     /**
+     * Returns the equipment options.
+     * 
+     * @return the equipment options
+     */
+    public Collection<Equipment> getEquipmentOptions();
+
+    /**
      * Returns the maximum amount of weapons the unit can acquire.
      * 
      * @return the maximum amount of weapons the unit can acquire
@@ -60,6 +69,13 @@ public interface AvailabilityUnit extends Unit {
      * @return the minimum amount of weapons the unit should acquire
      */
     public Integer getMinWeapons();
+
+    /**
+     * Returns the weapon enhancement options.
+     * 
+     * @return the weapon enhancement options
+     */
+    public Collection<WeaponEnhancement> getWeaponEnhancementOptions();
 
     /**
      * Returns the weapon options.
