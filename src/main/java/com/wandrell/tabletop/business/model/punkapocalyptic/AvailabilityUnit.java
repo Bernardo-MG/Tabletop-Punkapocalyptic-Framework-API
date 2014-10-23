@@ -21,7 +21,6 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 /**
@@ -41,13 +40,6 @@ public interface AvailabilityUnit extends Unit {
      * @return the armor options
      */
     public Collection<Armor> getArmorOptions();
-
-    /**
-     * Returns this unit's constraints.
-     * 
-     * @return this unit's constraints
-     */
-    public Collection<GangConstraint> getConstraints();
 
     /**
      * Returns the equipment options.
