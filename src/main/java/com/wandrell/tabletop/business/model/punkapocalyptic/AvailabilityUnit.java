@@ -19,7 +19,6 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
@@ -49,31 +48,10 @@ public interface AvailabilityUnit extends Unit {
     public Collection<Equipment> getEquipmentOptions();
 
     /**
-     * Returns the maximum amount of weapons the unit can acquire.
-     * 
-     * @return the maximum amount of weapons the unit can acquire
-     */
-    public Integer getMaxWeapons();
-
-    /**
-     * Returns the minimum amount of weapons the unit should acquire.
-     * 
-     * @return the minimum amount of weapons the unit should acquire
-     */
-    public Integer getMinWeapons();
-
-    /**
      * Returns the weapon enhancement options.
      * 
      * @return the weapon enhancement options
      */
     public Collection<WeaponEnhancement> getWeaponEnhancementOptions();
-
-    /**
-     * Returns the weapon options.
-     * 
-     * @return the weapon options
-     */
-    public Collection<Weapon> getWeaponOptions();
 
 }

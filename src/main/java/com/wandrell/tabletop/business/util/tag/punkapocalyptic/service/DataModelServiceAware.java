@@ -4,6 +4,6 @@ import com.wandrell.tabletop.data.service.punkapocalyptic.model.DataModelService
 
 public interface DataModelServiceAware {
 
-    public void setModelDataService(final DataModelService service);
+    public void setDataModelService(final DataModelService service);
 
 }
