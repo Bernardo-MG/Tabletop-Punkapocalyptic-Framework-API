@@ -17,7 +17,6 @@ package com.wandrell.tabletop.business.model.punkapocalyptic;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
@@ -32,13 +31,6 @@ public interface AvailabilityUnit extends Unit {
 
     @Override
     public AvailabilityUnit createNewInstance();
-
-    /**
-     * Returns the armor options.
-     * 
-     * @return the armor options
-     */
-    public Collection<Armor> getArmorOptions();
 
     /**
      * Returns the equipment options.
