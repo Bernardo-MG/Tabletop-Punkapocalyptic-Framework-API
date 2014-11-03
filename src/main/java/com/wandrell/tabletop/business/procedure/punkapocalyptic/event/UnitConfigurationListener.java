@@ -4,6 +4,7 @@ import java.util.EventListener;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.event.UnitEvent;
 
+@Deprecated
 public interface UnitConfigurationListener extends EventListener {
 
     public void unitSelected(final UnitEvent event);
