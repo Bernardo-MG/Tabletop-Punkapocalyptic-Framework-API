@@ -12,4 +12,6 @@ public interface ArmyBuilderController extends ProcedureValidator {
 
     public UnitConfigurationController getUnitConfigurationController();
 
+    public void setGang(final Gang gang);
+
 }
