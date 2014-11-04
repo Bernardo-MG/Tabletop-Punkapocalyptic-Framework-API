@@ -5,7 +5,7 @@ import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.tabletop.business.procedure.ProcedureValidator;
 import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.GangChangedListener;
 
-public interface ArmyBuilderController extends ProcedureValidator {
+public interface GangBuilderManager extends ProcedureValidator {
 
     public void addGangChangedListener(final GangChangedListener listener);
 
@@ -13,7 +13,7 @@ public interface ArmyBuilderController extends ProcedureValidator {
 
     public ValueHandler getMaxUnits();
 
-    public UnitConfigurationController getUnitConfigurationController();
+    public UnitConfigurationManager getUnitConfigurationController();
 
     public void removeGangChangedListener(final GangChangedListener listener);
 
