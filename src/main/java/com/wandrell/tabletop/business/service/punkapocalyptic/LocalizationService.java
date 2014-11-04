@@ -10,6 +10,8 @@ public interface LocalizationService {
 
     public String getUnitNameString(final String unit);
 
+    public String getViewString(final String key);
+
     public String getWeaponString(final String weapon);
 
 }
