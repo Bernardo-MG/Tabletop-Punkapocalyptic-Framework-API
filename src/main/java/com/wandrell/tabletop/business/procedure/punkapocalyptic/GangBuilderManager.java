@@ -19,8 +19,6 @@ public interface GangBuilderManager extends ProcedureValidator {
 
     public ValueHandler getMaxUnits();
 
-    public UnitConfigurationManager getUnitConfigurationController();
-
     public Collection<Unit> getUnitOptions();
 
     public void removeGangChangedListener(final GangChangedListener listener);
