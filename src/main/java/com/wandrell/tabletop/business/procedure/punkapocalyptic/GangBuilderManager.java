@@ -1,6 +1,9 @@
 package com.wandrell.tabletop.business.procedure.punkapocalyptic;
 
+import java.util.Collection;
+
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 import com.wandrell.tabletop.business.procedure.ProcedureValidator;
 import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.GangChangedListener;
@@ -17,6 +20,8 @@ public interface GangBuilderManager extends ProcedureValidator {
     public ValueHandler getMaxUnits();
 
     public UnitConfigurationManager getUnitConfigurationController();
+
+    public Collection<Unit> getUnitOptions();
 
     public void removeGangChangedListener(final GangChangedListener listener);
 
