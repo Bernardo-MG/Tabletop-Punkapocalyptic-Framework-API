@@ -12,6 +12,8 @@ public interface LocalizationService {
 
     public String getViewString(final String key);
 
+    public Object getWeaponEnhancementString(final String enhancement);
+
     public String getWeaponString(final String weapon);
 
 }
