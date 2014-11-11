@@ -15,7 +15,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapo
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.RangedWeapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.UnitGangConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
@@ -30,7 +30,7 @@ public interface ModelService {
     public Faction getFaction(final String name);
 
     public FactionUnitAvailability getFactionUnitAvailability(final Unit unit,
-            final Collection<UnitGangConstraint> constraints);
+            final Collection<GangConstraint> constraints);
 
     public Gang getGang(final Faction faction);
 
@@ -61,7 +61,8 @@ public interface ModelService {
             final Collection<WeaponEnhancement> weaponEnhancements,
             final Collection<Equipment> equipment);
 
-    public UnitGangConstraint getUnitGangConstraint(final String name);
+    public GangConstraint getUnitGangConstraint(final String name,
+            final String unit);
 
     public UnitWeaponAvailability getUnitWeaponAvailability(
             final Collection<WeaponOption> weaponOptions,

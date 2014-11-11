@@ -8,7 +8,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.UnitGangConstraint;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 public interface DataModelService {
@@ -23,7 +23,7 @@ public interface DataModelService {
 
     public UnitArmorAvailability getUnitArmorAvailability(final String unit);
 
-    public Collection<UnitGangConstraint> getUnitConstraints(final String unit,
+    public Collection<GangConstraint> getUnitConstraints(final String unit,
             final String faction);
 
     public Collection<WeaponEnhancement> getWeaponEnhancements(
