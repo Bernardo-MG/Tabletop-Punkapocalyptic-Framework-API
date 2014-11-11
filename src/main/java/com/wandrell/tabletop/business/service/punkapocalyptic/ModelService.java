@@ -16,7 +16,6 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.RangedWeap
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.UnitGangConstraint;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.modifier.ArmorInitializerModifier;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
@@ -25,9 +24,6 @@ public interface ModelService {
 
     public Armor getArmor(final String name, final Integer armor,
             final Collection<SpecialRule> rules);
-
-    public ArmorInitializerModifier getArmorInitializerModifier(
-            final String name);
 
     public Equipment getEquipment(final String name, final Integer cost);
 
