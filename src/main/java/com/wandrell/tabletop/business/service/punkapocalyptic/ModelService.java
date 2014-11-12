@@ -5,7 +5,6 @@ import java.util.Collection;
 import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitEquipmentAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitWeaponAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.WeaponOption;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
@@ -56,10 +55,6 @@ public interface ModelService {
 
     public UnitArmorAvailability getUnitArmorAvailability(
             final Collection<Armor> armorOptions, final Armor initialArmor);
-
-    public UnitEquipmentAvailability getUnitEquipmentAvailability(
-            final Collection<WeaponEnhancement> weaponEnhancements,
-            final Collection<Equipment> equipment);
 
     public GangConstraint getUnitGangConstraint(final String name,
             final String unit);
