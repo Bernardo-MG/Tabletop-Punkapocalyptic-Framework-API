@@ -174,7 +174,7 @@
 						</property>
 						<property>
 							<name>suitename</name>
-							<value>${project.artifactId}(${project.groupId})-integration-suite</value>
+							<value>${project.artifactId}_(${project.groupId})_Integration_Suite</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>
@@ -254,7 +254,7 @@
 						</property>
 						<property>
 							<name>suitename</name>
-							<value>${project.artifactId}(${project.groupId})-unit-suite</value>
+							<value>${project.artifactId}_(${project.groupId})_Unit_Suite</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>
@@ -308,7 +308,6 @@
 					<reportSet>
 						<reports>
 							<report>javadoc</report>
-							<report>test-javadoc</report>
 						</reports>
 					</reportSet>
 				</reportSets>
