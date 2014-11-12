@@ -4,6 +4,8 @@ public interface LocalizationService {
 
     public String getArmorString(final String armor);
 
+    public String getEquipmentString(final String equipment);
+
     public String getMessageString(final String message);
 
     public String getSpecialRuleString(final String name);
@@ -12,7 +14,7 @@ public interface LocalizationService {
 
     public String getViewString(final String key);
 
-    public Object getWeaponEnhancementString(final String enhancement);
+    public String getWeaponEnhancementString(final String enhancement);
 
     public String getWeaponString(final String weapon);
 
