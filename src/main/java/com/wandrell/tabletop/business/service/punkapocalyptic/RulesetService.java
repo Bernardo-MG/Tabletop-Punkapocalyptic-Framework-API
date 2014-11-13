@@ -10,7 +10,8 @@ import com.wandrell.tabletop.business.model.valuehandler.ModularDerivedValueHand
 
 public interface RulesetService {
 
-    public Collection<Weapon> filterWeaponOptions(final Unit unit,
+    public Collection<Weapon> filterWeaponOptions(
+            final Collection<Weapon> weaponsHas,
             final Collection<Weapon> weapons);
 
     public Integer getBulletCost();
