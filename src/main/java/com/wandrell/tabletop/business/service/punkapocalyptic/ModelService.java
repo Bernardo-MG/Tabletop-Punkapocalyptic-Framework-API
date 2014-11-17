@@ -2,6 +2,7 @@ package com.wandrell.tabletop.business.service.punkapocalyptic;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.business.model.procedure.constraint.punkapocalyptic.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
@@ -14,8 +15,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapo
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.RangedWeapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.specialrule.SpecialRule;
+import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 

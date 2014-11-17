@@ -3,13 +3,13 @@ package com.wandrell.tabletop.data.service.punkapocalyptic.model;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.interval.Interval;
+import com.wandrell.tabletop.business.model.procedure.constraint.punkapocalyptic.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.constraint.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 public interface DataModelService {
