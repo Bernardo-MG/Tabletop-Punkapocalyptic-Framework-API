@@ -2,7 +2,6 @@ package com.wandrell.tabletop.business.service.punkapocalyptic;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.procedure.constraint.punkapocalyptic.GangConstraint;
 import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
@@ -18,6 +17,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnha
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
+import com.wandrell.tabletop.business.procedure.ProcedureConstraint;
 
 public interface ModelService {
 
@@ -29,7 +29,7 @@ public interface ModelService {
     public Faction getFaction(final String name);
 
     public FactionUnitAvailability getFactionUnitAvailability(final Unit unit,
-            final Collection<GangConstraint> constraints);
+            final Collection<ProcedureConstraint> constraints);
 
     public Gang getGang(final Faction faction);
 
@@ -56,7 +56,7 @@ public interface ModelService {
     public UnitArmorAvailability getUnitArmorAvailability(
             final Collection<Armor> armorOptions, final Armor initialArmor);
 
-    public GangConstraint getUnitGangConstraint(final String name,
+    public ProcedureConstraint getUnitGangConstraint(final String name,
             final String unit);
 
     public UnitWeaponAvailability getUnitWeaponAvailability(
