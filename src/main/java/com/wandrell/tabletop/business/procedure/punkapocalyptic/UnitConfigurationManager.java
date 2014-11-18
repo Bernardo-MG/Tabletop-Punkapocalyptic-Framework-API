@@ -8,9 +8,8 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.procedure.ProcedureValidator;
 
-public interface UnitConfigurationManager extends ProcedureValidator {
+public interface UnitConfigurationManager {
 
     public Interval getAllowedWeaponsInterval();
 
@@ -20,11 +19,15 @@ public interface UnitConfigurationManager extends ProcedureValidator {
 
     public Unit getUnit();
 
+    public Collection<String> getValidationMessages();
+
     public Collection<WeaponEnhancement> getWeaponEnhancements(
             final Weapon weapon);
 
     public Collection<Weapon> getWeaponOptions();
 
     public void setUnit(final Unit unit);
+
+    public Boolean validate();
 
 }

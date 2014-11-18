@@ -10,7 +10,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapo
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.procedure.ProcedureConstraint;
+import com.wandrell.tabletop.business.procedure.Constraint;
 
 public interface DataModelService {
 
@@ -26,8 +26,8 @@ public interface DataModelService {
 
     public UnitArmorAvailability getUnitArmorAvailability(final String unit);
 
-    public Collection<ProcedureConstraint> getUnitConstraints(
-            final String unit, final String faction);
+    public Collection<Constraint> getUnitConstraints(final String unit,
+            final String faction);
 
     public Collection<WeaponEnhancement> getWeaponEnhancements(
             final String unit, final String weapon);
