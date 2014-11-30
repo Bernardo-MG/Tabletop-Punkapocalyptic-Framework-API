@@ -6,6 +6,8 @@ public interface LocalizationService {
 
     public String getEquipmentString(final String equipment);
 
+    public String getFactionNameString(final String faction);
+
     public String getMessageString(final String message);
 
     public String getSpecialRuleString(final String name);
