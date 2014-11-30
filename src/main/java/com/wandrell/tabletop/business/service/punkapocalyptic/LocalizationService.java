@@ -10,6 +10,8 @@ public interface LocalizationService {
 
     public String getMessageString(final String message);
 
+    public String getReportString(final String key);
+
     public String getSpecialRuleString(final String name);
 
     public String getUnitNameString(final String unit);
