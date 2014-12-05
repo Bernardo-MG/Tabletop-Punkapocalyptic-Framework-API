@@ -1,9 +1,11 @@
 package com.wandrell.tabletop.business.service.punkapocalyptic;
 
+import java.io.File;
+
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 
 public interface FileService {
 
-    public void saveGang(final Gang gang, final String path);
+    public void saveGang(final Gang gang, final File file);
 
 }

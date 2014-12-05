@@ -106,12 +106,6 @@
 			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<!-- Wandrell's Swing Library -->
-			<groupId>com.wandrell</groupId>
-			<artifactId>wandrell-swing</artifactId>
-			<version>${wandrell.version}</version>
-		</dependency>
 	</dependencies>
 
 	<build>
