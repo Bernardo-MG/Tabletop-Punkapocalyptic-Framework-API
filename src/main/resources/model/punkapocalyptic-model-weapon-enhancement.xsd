@@ -21,22 +21,5 @@
 				minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
-	
-	<!-- This should be imported -->
-
-	<xs:simpleType name="attribute">
-		<xs:restriction base="xs:token">
-			<xs:enumeration value="actions" />
-			<xs:enumeration value="combat" />
-			<xs:enumeration value="precision" />
-			<xs:enumeration value="agility" />
-			<xs:enumeration value="strength" />
-			<xs:enumeration value="toughness" />
-			<xs:enumeration value="tech" />
-			<xs:enumeration value="penetration" />
-			<xs:enumeration value="armor" />
-			<xs:enumeration value="cover" />
-		</xs:restriction>
-	</xs:simpleType>
 
 </xs:schema>

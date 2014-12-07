@@ -21,7 +21,5 @@
 				minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
-	
-	<!-- This should be imported -->
 
 </xs:schema>

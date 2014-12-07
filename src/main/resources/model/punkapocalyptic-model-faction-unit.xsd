@@ -45,16 +45,9 @@
 
 	<xs:complexType name="constraintsList">
 		<xs:sequence>
-			<xs:element name="constraint" type="unitConstraints"
+			<xs:element name="constraint" type="xs:token"
 				maxOccurs="unbounded" minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
-
-	<xs:simpleType name="unitConstraints">
-		<xs:restriction base="xs:token">
-			<xs:enumeration value="unique" />
-			<xs:enumeration value="up_to_half_points" />
-		</xs:restriction>
-	</xs:simpleType>
 
 </xs:schema>
