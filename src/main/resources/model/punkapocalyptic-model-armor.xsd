@@ -8,7 +8,7 @@
 			</xs:sequence>
 		</xs:complexType>
 		<xs:unique name="uniqueData">
-			<xs:selector xpath="armor" />
+			<xs:selector xpath="armor_profile" />
 			<xs:field xpath="name" />
 		</xs:unique>
 	</xs:element>
