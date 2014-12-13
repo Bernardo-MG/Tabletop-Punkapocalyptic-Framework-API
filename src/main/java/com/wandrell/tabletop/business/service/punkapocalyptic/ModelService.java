@@ -5,6 +5,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
+import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitMutationAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitWeaponAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.WeaponOption;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
@@ -16,6 +17,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Mutation;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 import com.wandrell.tabletop.business.procedure.Constraint;
 
@@ -36,6 +38,8 @@ public interface ModelService {
     public MeleeWeapon getMeleeWeapon(final String name, final Integer cost,
             final Integer strength, final Integer penetration,
             final Integer combat);
+
+    public Mutation getMutation(final String name, final Integer cost);
 
     public RangedValue getRangedValue(final Integer distanceShort,
             final Integer distanceMedium, final Integer distanceLong);
@@ -58,6 +62,9 @@ public interface ModelService {
 
     public Constraint
             getUnitGangConstraint(final String name, final String unit);
+
+    public UnitMutationAvailability getUnitMutationAvailability(
+            final Integer max, final Collection<Mutation> mutations);
 
     public UnitWeaponAvailability getUnitWeaponAvailability(
             final Collection<WeaponOption> weaponOptions,

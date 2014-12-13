@@ -7,6 +7,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Mutation;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 
 public interface UnitConfigurationManager {
@@ -17,6 +18,8 @@ public interface UnitConfigurationManager {
 
     public Collection<Equipment> getEquipmentOptions();
 
+    public Collection<Mutation> getMutations();
+
     public Unit getUnit();
 
     public Collection<String> getValidationMessages();
@@ -25,6 +28,8 @@ public interface UnitConfigurationManager {
             final Weapon weapon);
 
     public Collection<Weapon> getWeaponOptions();
+
+    public Boolean isGrouped();
 
     public void setUnit(final Unit unit);
 

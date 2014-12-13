@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.interval.Interval;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
+import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitMutationAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapon;
@@ -21,6 +22,8 @@ public interface DataModelService {
     public Collection<Unit> getFactionUnits(final String faction);
 
     public MeleeWeapon getMeleeWeapon(final String weapon);
+
+    public UnitMutationAvailability getMutationOptions(final String unit);
 
     public Interval getUnitAllowedWeaponsInterval(final String unit);
 
