@@ -13,7 +13,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnha
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
 import com.wandrell.tabletop.business.procedure.Constraint;
 
-public interface DataModelService {
+public interface DataService {
 
     public Collection<Faction> getAllFactions();
 

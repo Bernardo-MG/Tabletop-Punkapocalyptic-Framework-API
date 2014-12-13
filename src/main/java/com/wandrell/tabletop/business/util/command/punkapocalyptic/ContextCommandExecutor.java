@@ -5,14 +5,14 @@ import com.wandrell.tabletop.business.service.punkapocalyptic.FileService;
 import com.wandrell.tabletop.business.service.punkapocalyptic.LocalizationService;
 import com.wandrell.tabletop.business.service.punkapocalyptic.ModelService;
 import com.wandrell.tabletop.business.service.punkapocalyptic.RulesetService;
-import com.wandrell.tabletop.data.service.punkapocalyptic.model.DataModelService;
+import com.wandrell.tabletop.data.service.punkapocalyptic.model.DataService;
 import com.wandrell.util.command.CommandExecutor;
 
 public interface ContextCommandExecutor extends CommandExecutor {
 
     public void setApplicationInfoService(final ApplicationInfoService service);
 
-    public void setDataModelService(final DataModelService service);
+    public void setDataModelService(final DataService service);
 
     public void setFileService(final FileService service);
 
