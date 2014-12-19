@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.GangChangedListener;
 import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.UnitChangedListener;
 
@@ -16,7 +16,7 @@ public interface GangBuilderManager {
 
     public Gang getGang();
 
-    public ValueHandler getMaxUnits();
+    public ValueBox getMaxUnits();
 
     public Collection<Unit> getUnitOptions();
 

@@ -6,7 +6,7 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapo
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.valuehandler.ModularDerivedValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.derived.DerivedValueBox;
 
 public interface RulesetService {
 
@@ -24,7 +24,7 @@ public interface RulesetService {
 
     public Integer getUnitValoration(final Unit unit);
 
-    public void setUpMaxUnitsValueHandler(
-            final ModularDerivedValueHandler value, final Gang gang);
+    public void setUpMaxUnitsValueHandler(final DerivedValueBox value,
+            final Gang gang);
 
 }
