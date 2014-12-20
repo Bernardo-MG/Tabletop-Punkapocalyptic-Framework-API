@@ -18,6 +18,8 @@ public interface UnitConfigurationManager {
 
     public Collection<Equipment> getEquipmentOptions();
 
+    public Integer getMaxMutations();
+
     public Collection<Mutation> getMutations();
 
     public Unit getUnit();
