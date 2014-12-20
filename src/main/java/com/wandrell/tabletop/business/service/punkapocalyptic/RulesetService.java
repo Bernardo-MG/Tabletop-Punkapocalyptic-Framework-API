@@ -20,6 +20,8 @@ public interface RulesetService {
 
     public Integer getMaxAllowedUnits(final Gang gang);
 
+    public Integer getPackMaxSize();
+
     public MeleeWeapon getTwoHandedMeleeEquivalent();
 
     public Integer getUnitValoration(final Unit unit);
