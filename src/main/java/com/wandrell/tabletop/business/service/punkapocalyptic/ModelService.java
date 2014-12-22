@@ -60,8 +60,8 @@ public interface ModelService {
     public UnitArmorAvailability getUnitArmorAvailability(
             final Collection<Armor> armorOptions, final Armor initialArmor);
 
-    public Constraint
-            getUnitGangConstraint(final String name, final String unit);
+    public Constraint getUnitGangConstraint(final String name,
+            final String unit, final String... context);
 
     public UnitMutationAvailability getUnitMutationAvailability(
             final Integer max, final Collection<Mutation> mutations);
