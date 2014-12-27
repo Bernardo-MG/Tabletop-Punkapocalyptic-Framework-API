@@ -39,7 +39,10 @@ public interface ModelService {
             final Integer strength, final Integer penetration,
             final Integer combat);
 
-    public Mutation getMutation(final String name, final Integer cost);
+    public Mutation getMutation(final String name, final Integer cost,
+            final Integer actions, final Integer agility, final Integer combat,
+            final Integer precision, final Integer strength,
+            final Integer tech, final Integer toughness);
 
     public RangedValue getRangedValue(final Integer distanceShort,
             final Integer distanceMedium, final Integer distanceLong);
