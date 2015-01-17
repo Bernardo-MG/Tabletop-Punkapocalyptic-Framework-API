@@ -2,7 +2,6 @@ package com.wandrell.tabletop.business.service.punkapocalyptic;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.RangedValue;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitMutationAvailability;
@@ -17,8 +16,9 @@ import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
 import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Mutation;
 import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
+import com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation.Mutation;
+import com.wandrell.tabletop.business.model.punkapocalyptic.util.RangedValue;
 import com.wandrell.tabletop.business.procedure.Constraint;
 
 public interface ModelService {
