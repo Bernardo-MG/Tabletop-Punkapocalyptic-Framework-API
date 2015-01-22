@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
+import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitEquipmentAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitMutationAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitWeaponAvailability;
 import com.wandrell.tabletop.business.model.punkapocalyptic.availability.WeaponOption;
@@ -30,14 +31,15 @@ public interface ModelService {
 
     public Faction getFaction(final String name);
 
-    public FactionUnitAvailability getFactionUnitAvailability(final Unit unit,
+    public FactionUnitAvailability getFactionUnitAvailability(
+            final Faction faction, final Unit unit,
             final Collection<Constraint> constraints);
 
     public Gang getGang(final Faction faction);
 
     public MeleeWeapon getMeleeWeapon(final String name, final Integer cost,
             final Integer strength, final Integer penetration,
-            final Integer combat);
+            final Integer combat, final Collection<SpecialRule> rules);
 
     public Mutation getMutation(final String name, final Integer cost,
             final Integer actions, final Integer agility, final Integer combat,
@@ -48,9 +50,9 @@ public interface ModelService {
             final Integer distanceMedium, final Integer distanceLong);
 
     public RangedWeapon getRangedWeapon(final String name, final Integer cost,
-            final RangedValue penetration, final RangedValue strength,
-            final RangedValue distanceCM, final RangedValue distanceInches,
-            final MeleeWeapon weaponMelee);
+            final Collection<SpecialRule> rules, final RangedValue penetration,
+            final RangedValue strength, final RangedValue distanceCM,
+            final RangedValue distanceInches, final MeleeWeapon weaponMelee);
 
     public SpecialRule getSpecialRule(final String name);
 
@@ -60,16 +62,20 @@ public interface ModelService {
             final Integer tech, final Integer toughness, final Integer cost,
             final Collection<SpecialRule> rules);
 
-    public UnitArmorAvailability getUnitArmorAvailability(
+    public UnitArmorAvailability getUnitArmorAvailability(final Unit unit,
             final Collection<Armor> armorOptions, final Armor initialArmor);
+
+    public UnitEquipmentAvailability getUnitEquipmentAvailability(
+            final Unit unit, final Collection<Equipment> equipment);
 
     public Constraint getUnitGangConstraint(final String name,
             final String unit, final String... context);
 
     public UnitMutationAvailability getUnitMutationAvailability(
-            final Integer max, final Collection<Mutation> mutations);
+            final Unit unit, final Integer max,
+            final Collection<Mutation> mutations);
 
-    public UnitWeaponAvailability getUnitWeaponAvailability(
+    public UnitWeaponAvailability getUnitWeaponAvailability(final Unit unit,
             final Collection<WeaponOption> weaponOptions,
             final Integer minWeapons, final Integer maxWeapons);
 
