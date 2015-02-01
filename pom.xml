@@ -28,6 +28,37 @@
 		<url>https://github.com/Bernardo-MG/punkapocalyptic-Framework-API</url>
 	</scm>
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/Bernardo-MG/Tabletop-Punkapocalyptic-Framework-API/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Punkapocalyptic-Framework-API</url>
+		<notifiers />
+	</ciManagement>
+
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>wandrell-releases</id>
+			<name>Wandrell releases repository</name>
+			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-punkapocalyptic-framework-api</url>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>wandrell-snapshots</id>
+			<name>Wandrell snapshots repository</name>
+			<url>ftp://maven.wandrell.com</url>
+		</snapshotRepository>
+		<site>
+			<id>wandrell-site</id>
+			<name>Wandrell Maven sites</name>
+			<url>ftp://docs.wandrell.com/tabletop-punkapocalyptic-framework-api</url>
+		</site>
+	</distributionManagement>
+
 	<organization>
 		<name />
 		<url />
