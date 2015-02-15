@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.util.tag.punkapocalyptic.service;
 
-import com.wandrell.service.application.ApplicationInfoService;
+import com.wandrell.pattern.service.application.ApplicationInfoService;
 
 public interface ApplicationInfoServiceAware {
 
