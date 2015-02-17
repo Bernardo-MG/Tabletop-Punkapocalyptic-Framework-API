@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.conf;
+package com.wandrell.tabletop.punkapocalyptic.conf;
 
 public final class WeaponNameConf {
 

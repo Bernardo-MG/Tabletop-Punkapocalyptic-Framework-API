@@ -1,7 +1,7 @@
-package com.wandrell.tabletop.business.util.tag.punkapocalyptic.repository;
+package com.wandrell.tabletop.punkapocalyptic.util.tag.repository;
 
 import com.wandrell.pattern.repository.Repository;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 
 public interface WeaponRepositoryAware {
 

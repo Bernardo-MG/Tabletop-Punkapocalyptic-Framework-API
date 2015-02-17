@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.procedure.punkapocalyptic.event;
+package com.wandrell.tabletop.punkapocalyptic.procedure.event;
 
 import java.util.EventListener;
 

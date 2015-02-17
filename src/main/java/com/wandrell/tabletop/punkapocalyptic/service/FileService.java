@@ -1,10 +1,10 @@
-package com.wandrell.tabletop.business.service.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.service;
 
 import java.io.File;
 
 import javafx.stage.Stage;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 
 public interface FileService {
 

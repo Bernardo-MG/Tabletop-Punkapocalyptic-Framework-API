@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.service.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.service;
 
 public interface LocalizationService {
 

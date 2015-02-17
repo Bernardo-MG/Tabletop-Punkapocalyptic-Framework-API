@@ -1,26 +1,26 @@
-package com.wandrell.tabletop.business.service.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.service;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.FactionUnitAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitArmorAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitEquipmentAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitMutationAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.UnitWeaponAvailability;
-import com.wandrell.tabletop.business.model.punkapocalyptic.availability.WeaponOption;
-import com.wandrell.tabletop.business.model.punkapocalyptic.faction.Faction;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.MeleeWeapon;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.RangedWeapon;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.ruleset.SpecialRule;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation.Mutation;
-import com.wandrell.tabletop.business.model.punkapocalyptic.util.RangedValue;
-import com.wandrell.tabletop.business.procedure.Constraint;
+import com.wandrell.tabletop.procedure.Constraint;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.FactionUnitAvailability;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitArmorAvailability;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitEquipmentAvailability;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitMutationAvailability;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitWeaponAvailability;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.WeaponOption;
+import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.MeleeWeapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.RangedWeapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
+import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
+import com.wandrell.tabletop.punkapocalyptic.model.util.RangedValue;
 
 public interface ModelService {
 

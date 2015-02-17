@@ -1,10 +1,10 @@
-package com.wandrell.tabletop.business.procedure.punkapocalyptic.event;
+package com.wandrell.tabletop.punkapocalyptic.procedure.event;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.util.EventObject;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 
 public final class GangChangedEvent extends EventObject {
 

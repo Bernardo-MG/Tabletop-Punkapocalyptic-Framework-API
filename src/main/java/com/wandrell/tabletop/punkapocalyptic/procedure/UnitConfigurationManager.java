@@ -1,14 +1,14 @@
-package com.wandrell.tabletop.business.procedure.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.procedure;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.interval.Interval;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Armor;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Equipment;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.WeaponEnhancement;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.mutation.Mutation;
+import com.wandrell.tabletop.interval.Interval;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
 
 public interface UnitConfigurationManager {
 

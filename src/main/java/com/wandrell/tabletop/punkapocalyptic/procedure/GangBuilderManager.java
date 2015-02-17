@@ -1,12 +1,12 @@
-package com.wandrell.tabletop.business.procedure.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.procedure;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Gang;
-import com.wandrell.tabletop.business.model.punkapocalyptic.unit.Unit;
-import com.wandrell.tabletop.business.model.valuebox.ValueBox;
-import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.GangChangedListener;
-import com.wandrell.tabletop.business.procedure.punkapocalyptic.event.UnitChangedListener;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangChangedListener;
+import com.wandrell.tabletop.punkapocalyptic.procedure.event.UnitChangedListener;
+import com.wandrell.tabletop.valuebox.ValueBox;
 
 public interface GangBuilderManager {
 

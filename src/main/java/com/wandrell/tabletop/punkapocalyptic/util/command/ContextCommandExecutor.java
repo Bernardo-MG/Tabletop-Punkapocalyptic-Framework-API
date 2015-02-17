@@ -1,13 +1,13 @@
-package com.wandrell.tabletop.business.util.command.punkapocalyptic;
+package com.wandrell.tabletop.punkapocalyptic.util.command;
 
 import com.wandrell.pattern.command.CommandExecutor;
 import com.wandrell.pattern.repository.Repository;
 import com.wandrell.pattern.service.application.ApplicationInfoService;
-import com.wandrell.tabletop.business.model.punkapocalyptic.inventory.Weapon;
-import com.wandrell.tabletop.business.service.punkapocalyptic.FileService;
-import com.wandrell.tabletop.business.service.punkapocalyptic.LocalizationService;
-import com.wandrell.tabletop.business.service.punkapocalyptic.ModelService;
-import com.wandrell.tabletop.business.service.punkapocalyptic.RulesetService;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.service.FileService;
+import com.wandrell.tabletop.punkapocalyptic.service.LocalizationService;
+import com.wandrell.tabletop.punkapocalyptic.service.ModelService;
+import com.wandrell.tabletop.punkapocalyptic.service.RulesetService;
 
 public interface ContextCommandExecutor extends CommandExecutor {
 
