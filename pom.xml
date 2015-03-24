@@ -109,7 +109,7 @@
 		<java.version.source>1.7</java.version.source>
 		<java.version.target>${java.version.source}</java.version.target>
 		<!-- Manifest data -->
-		<manifest.name>com/wandrell/tabletop/pendragon/framework/api</manifest.name>
+		<manifest.name>com/wandrell/tabletop/punkapocalyptic/framework/api</manifest.name>
 		<!-- Dependencies versions -->
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
