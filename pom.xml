@@ -150,6 +150,12 @@
 
 	<dependencies>
 		<dependency>
+			<!-- Java Util -->
+			<groupId>com.wandrell</groupId>
+			<artifactId>java-utils</artifactId>
+			<version>${wandrell.version}</version>
+		</dependency>
+		<dependency>
 			<!-- Tabletop API -->
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>tabletop-api</artifactId>
