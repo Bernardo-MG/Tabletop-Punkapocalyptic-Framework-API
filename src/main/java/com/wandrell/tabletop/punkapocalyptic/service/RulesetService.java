@@ -6,7 +6,6 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.MeleeWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
-import com.wandrell.tabletop.valuebox.ValueBox;
 
 public interface RulesetService {
 
@@ -25,8 +24,5 @@ public interface RulesetService {
     public MeleeWeapon getTwoHandedMeleeEquivalent();
 
     public Integer getUnitValoration(final Unit unit);
-
-    public void
-            setUpMaxUnitsValueHandler(final ValueBox value, final Gang gang);
 
 }
