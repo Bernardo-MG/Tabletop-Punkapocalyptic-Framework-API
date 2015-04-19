@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangBuilderStatusChangedListener;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangChangedListener;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.UnitChangedListener;
 import com.wandrell.tabletop.valuebox.ValueBox;
@@ -11,6 +12,9 @@ import com.wandrell.tabletop.valuebox.ValueBox;
 public interface GangBuilderManager {
 
     public void addGangChangedListener(final GangChangedListener listener);
+
+    public void addStatusChangedListener(
+            final GangBuilderStatusChangedListener listener);
 
     public void addUnitChangedListener(final UnitChangedListener listener);
 
@@ -23,6 +27,9 @@ public interface GangBuilderManager {
     public Collection<String> getValidationMessages();
 
     public void removeGangChangedListener(final GangChangedListener listener);
+
+    public void removeStatusChangedListener(
+            final GangBuilderStatusChangedListener listener);
 
     public void removeUnitChangedListener(final UnitChangedListener listener);
 
