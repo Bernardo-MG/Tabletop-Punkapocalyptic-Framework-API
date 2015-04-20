@@ -3,6 +3,7 @@ package com.wandrell.tabletop.punkapocalyptic.service;
 import java.util.Collection;
 
 import com.wandrell.tabletop.procedure.Constraint;
+import com.wandrell.tabletop.procedure.ConstraintData;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.FactionUnitAvailability;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitArmorAvailability;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitEquipmentAvailability;
@@ -33,7 +34,7 @@ public interface ModelService {
 
     public FactionUnitAvailability getFactionUnitAvailability(
             final Faction faction, final Unit unit,
-            final Collection<Constraint> constraints);
+            final Collection<ConstraintData> constraints);
 
     public Gang getGang(final Faction faction);
 
@@ -68,7 +69,7 @@ public interface ModelService {
     public UnitEquipmentAvailability getUnitEquipmentAvailability(
             final Unit unit, final Collection<Equipment> equipment);
 
-    public Constraint getUnitGangConstraint(final String name,
+    public Constraint getUnitGangConstraint(final Gang gang, final String name,
             final String unit, final String... context);
 
     public UnitMutationAvailability getUnitMutationAvailability(
