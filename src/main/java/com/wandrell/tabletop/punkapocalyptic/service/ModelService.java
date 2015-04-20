@@ -50,10 +50,11 @@ public interface ModelService {
     public RangedValue getRangedValue(final Integer distanceShort,
             final Integer distanceMedium, final Integer distanceLong);
 
-    public RangedWeapon getRangedWeapon(final String name, final Integer cost,
-            final Collection<SpecialRule> rules, final RangedValue penetration,
-            final RangedValue strength, final RangedValue distanceCM,
-            final RangedValue distanceInches, final MeleeWeapon weaponMelee);
+    public RangedWeapon getRangedWeapon(final Unit unit, final String name,
+            final Integer cost, final Collection<SpecialRule> rules,
+            final RangedValue penetration, final RangedValue strength,
+            final RangedValue distanceCM, final RangedValue distanceInches,
+            final MeleeWeapon weaponMelee);
 
     public SpecialRule getSpecialRule(final String name);
 
