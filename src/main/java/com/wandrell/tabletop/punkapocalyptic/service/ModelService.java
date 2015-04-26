@@ -20,6 +20,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
 import com.wandrell.tabletop.punkapocalyptic.model.util.RangedValue;
 
@@ -33,7 +34,7 @@ public interface ModelService {
     public Faction getFaction(final String name);
 
     public FactionUnitAvailability getFactionUnitAvailability(
-            final Faction faction, final Unit unit,
+            final Faction faction, final UnitTemplate unit,
             final Collection<ConstraintData> constraints);
 
     public Gang getGang(final Faction faction);
@@ -58,26 +59,28 @@ public interface ModelService {
 
     public SpecialRule getSpecialRule(final String name);
 
-    public Unit getUnit(final String name, final Integer actions,
+    public Unit getUnit(final UnitTemplate template, final Integer actions,
             final Integer agility, final Integer combat,
             final Integer precision, final Integer strength,
             final Integer tech, final Integer toughness, final Integer cost,
             final Collection<SpecialRule> rules);
 
-    public UnitArmorAvailability getUnitArmorAvailability(final Unit unit,
-            final Collection<Armor> armorOptions, final Armor initialArmor);
+    public UnitArmorAvailability getUnitArmorAvailability(
+            final UnitTemplate unit, final Collection<Armor> armorOptions,
+            final Armor initialArmor);
 
     public UnitEquipmentAvailability getUnitEquipmentAvailability(
-            final Unit unit, final Collection<Equipment> equipment);
+            final UnitTemplate unit, final Collection<Equipment> equipment);
 
     public Constraint getUnitGangConstraint(final Gang gang, final String name,
             final String unit, final String... context);
 
     public UnitMutationAvailability getUnitMutationAvailability(
-            final Unit unit, final Integer max,
+            final UnitTemplate unit, final Integer max,
             final Collection<Mutation> mutations);
 
-    public UnitWeaponAvailability getUnitWeaponAvailability(final Unit unit,
+    public UnitWeaponAvailability getUnitWeaponAvailability(
+            final UnitTemplate unit,
             final Collection<WeaponOption> weaponOptions,
             final Integer minWeapons, final Integer maxWeapons);
 

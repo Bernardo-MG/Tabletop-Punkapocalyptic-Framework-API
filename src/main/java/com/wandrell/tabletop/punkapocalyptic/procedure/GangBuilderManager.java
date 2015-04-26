@@ -3,7 +3,7 @@ package com.wandrell.tabletop.punkapocalyptic.procedure;
 import java.util.Collection;
 
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
-import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
+import com.wandrell.tabletop.punkapocalyptic.model.unit.UnitTemplate;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangBuilderStatusChangedListener;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangChangedListener;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.UnitChangedListener;
@@ -22,7 +22,7 @@ public interface GangBuilderManager {
 
     public ValueBox getMaxUnits();
 
-    public Collection<Unit> getUnitOptions();
+    public Collection<UnitTemplate> getUnitOptions();
 
     public Collection<String> getValidationMessages();
 
