@@ -59,11 +59,7 @@ public interface ModelService {
 
     public SpecialRule getSpecialRule(final String name);
 
-    public Unit getUnit(final UnitTemplate template, final Integer actions,
-            final Integer agility, final Integer combat,
-            final Integer precision, final Integer strength,
-            final Integer tech, final Integer toughness, final Integer cost,
-            final Collection<SpecialRule> rules);
+    public Unit getUnit(final UnitTemplate template);
 
     public UnitArmorAvailability getUnitArmorAvailability(
             final UnitTemplate unit, final Collection<Armor> armorOptions,
