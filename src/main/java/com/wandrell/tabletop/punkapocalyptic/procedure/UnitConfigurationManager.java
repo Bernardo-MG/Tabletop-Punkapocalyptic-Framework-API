@@ -3,7 +3,7 @@ package com.wandrell.tabletop.punkapocalyptic.procedure;
 import java.util.Collection;
 
 import com.wandrell.tabletop.interval.Interval;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
@@ -14,7 +14,7 @@ public interface UnitConfigurationManager {
 
     public Interval getAllowedWeaponsInterval();
 
-    public Collection<Armor> getArmorOptions();
+    public Collection<ArmorOption> getArmorOptions();
 
     public Collection<Equipment> getEquipmentOptions();
 

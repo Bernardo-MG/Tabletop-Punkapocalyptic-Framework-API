@@ -9,7 +9,8 @@ import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitArmorAvailab
 import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitEquipmentAvailability;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitMutationAvailability;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.UnitWeaponAvailability;
-import com.wandrell.tabletop.punkapocalyptic.model.availability.WeaponOption;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
+import com.wandrell.tabletop.punkapocalyptic.model.availability.option.WeaponOption;
 import com.wandrell.tabletop.punkapocalyptic.model.faction.Faction;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
@@ -62,8 +63,9 @@ public interface ModelService {
     public Unit getUnit(final UnitTemplate template);
 
     public UnitArmorAvailability getUnitArmorAvailability(
-            final UnitTemplate unit, final Collection<Armor> armorOptions,
-            final Armor initialArmor);
+            final UnitTemplate unit,
+            final Collection<ArmorOption> armorOptions,
+            final ArmorOption initialArmor);
 
     public UnitEquipmentAvailability getUnitEquipmentAvailability(
             final UnitTemplate unit, final Collection<Equipment> equipment);
