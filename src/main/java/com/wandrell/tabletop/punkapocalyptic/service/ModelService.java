@@ -42,7 +42,8 @@ public interface ModelService {
 
     public MeleeWeapon getMeleeWeapon(final String name, final Integer cost,
             final Integer strength, final Integer penetration,
-            final Integer combat, final Collection<SpecialRule> rules);
+            final Integer combat, final Boolean twoHanded,
+            final Collection<SpecialRule> rules);
 
     public Mutation getMutation(final String name, final Integer cost,
             final Integer actions, final Integer agility, final Integer combat,
@@ -53,10 +54,10 @@ public interface ModelService {
             final Integer distanceMedium, final Integer distanceLong);
 
     public RangedWeapon getRangedWeapon(final Unit unit, final String name,
-            final Integer cost, final Collection<SpecialRule> rules,
-            final RangedValue penetration, final RangedValue strength,
-            final RangedValue distanceCM, final RangedValue distanceInches,
-            final Boolean firearm);
+            final Integer cost, final Boolean twoHanded,
+            final Collection<SpecialRule> rules, final RangedValue penetration,
+            final RangedValue strength, final RangedValue distanceCM,
+            final RangedValue distanceInches, final Boolean firearm);
 
     public SpecialRule getSpecialRule(final String name);
 
