@@ -8,7 +8,7 @@ public interface RulesetService {
 
     public Integer getGangValoration(final Gang gang);
 
-    public Integer getMaxAllowedUnits(final Gang gang);
+    public Integer getMaxAllowedUnits(final Integer valoration);
 
     public Integer getPackMaxSize();
 
