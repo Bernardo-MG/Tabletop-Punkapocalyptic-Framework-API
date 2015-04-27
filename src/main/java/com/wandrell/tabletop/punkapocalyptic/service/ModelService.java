@@ -56,7 +56,7 @@ public interface ModelService {
             final Integer cost, final Collection<SpecialRule> rules,
             final RangedValue penetration, final RangedValue strength,
             final RangedValue distanceCM, final RangedValue distanceInches,
-            final MeleeWeapon weaponMelee);
+            final Boolean firearm, final MeleeWeapon weaponMelee);
 
     public SpecialRule getSpecialRule(final String name);
 
