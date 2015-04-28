@@ -10,7 +10,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Unit;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
 
-public interface UnitConfigurationManager {
+public interface UnitConfigurationManager extends ValidatedProcedure {
 
     public Interval getAllowedWeaponsInterval();
 
@@ -24,8 +24,6 @@ public interface UnitConfigurationManager {
 
     public Unit getUnit();
 
-    public Collection<String> getValidationMessages();
-
     public Collection<WeaponEnhancement> getWeaponEnhancements(
             final Weapon weapon);
 
@@ -34,7 +32,5 @@ public interface UnitConfigurationManager {
     public Boolean isGrouped();
 
     public void setUnit(final Unit unit);
-
-    public Boolean validate();
 
 }

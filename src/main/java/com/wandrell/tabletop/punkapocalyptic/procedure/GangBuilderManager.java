@@ -9,7 +9,7 @@ import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangChangedListener
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.UnitChangedListener;
 import com.wandrell.tabletop.valuebox.ValueBox;
 
-public interface GangBuilderManager {
+public interface GangBuilderManager extends ValidatedProcedure {
 
     public void addGangChangedListener(final GangChangedListener listener);
 
@@ -24,8 +24,6 @@ public interface GangBuilderManager {
 
     public Collection<UnitTemplate> getUnitOptions();
 
-    public Collection<String> getValidationMessages();
-
     public void removeGangChangedListener(final GangChangedListener listener);
 
     public void removeStatusChangedListener(
@@ -34,7 +32,5 @@ public interface GangBuilderManager {
     public void removeUnitChangedListener(final UnitChangedListener listener);
 
     public void setGang(final Gang gang);
-
-    public Boolean validate();
 
 }
