@@ -4,7 +4,8 @@ import java.util.EventListener;
 
 import com.wandrell.tabletop.event.ValueChangeEvent;
 
-public interface GangBuilderStatusChangedListener extends EventListener {
+public interface GangBuilderStatusChangedListener extends EventListener,
+        GangChangedListener, UnitChangedListener {
 
     public void maxUnitsChanged(final ValueChangeEvent event);
 
