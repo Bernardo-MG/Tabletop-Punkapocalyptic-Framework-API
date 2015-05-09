@@ -3,11 +3,10 @@ package com.wandrell.tabletop.punkapocalyptic.repository;
 import java.util.Collection;
 
 import com.wandrell.pattern.repository.Repository;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.UnitWeapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
 
-public interface WeaponRepository extends Repository<UnitWeapon> {
+public interface WeaponRepository extends Repository<Weapon> {
 
-    public Collection<UnitWeapon>
-            getByNamesList(final Collection<String> names);
+    public Collection<Weapon> getByNamesList(final Collection<String> names);
 
 }
