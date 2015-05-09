@@ -16,7 +16,7 @@ import com.wandrell.tabletop.punkapocalyptic.model.inventory.Armor;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.MeleeWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.RangedWeapon;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.UnitWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.punkapocalyptic.model.ruleset.SpecialRule;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
@@ -86,7 +86,7 @@ public interface ModelService {
     public WeaponEnhancement getWeaponEnhancement(final String name,
             final Integer cost);
 
-    public WeaponOption getWeaponOption(final Weapon weapon,
+    public WeaponOption getWeaponOption(final UnitWeapon weapon,
             final Collection<WeaponEnhancement> enhancements);
 
 }

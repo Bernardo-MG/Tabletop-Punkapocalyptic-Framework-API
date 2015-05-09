@@ -5,7 +5,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.interval.Interval;
 import com.wandrell.tabletop.punkapocalyptic.model.availability.option.ArmorOption;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.Equipment;
-import com.wandrell.tabletop.punkapocalyptic.model.inventory.Weapon;
+import com.wandrell.tabletop.punkapocalyptic.model.inventory.UnitWeapon;
 import com.wandrell.tabletop.punkapocalyptic.model.inventory.WeaponEnhancement;
 import com.wandrell.tabletop.punkapocalyptic.model.unit.mutation.Mutation;
 
@@ -22,8 +22,8 @@ public interface UnitConfigurationOptions {
     public Collection<Mutation> getMutations();
 
     public Collection<WeaponEnhancement> getWeaponEnhancements(
-            final Weapon weapon);
+            final UnitWeapon weapon);
 
-    public Collection<Weapon> getWeaponOptions();
+    public Collection<UnitWeapon> getWeaponOptions();
 
 }
