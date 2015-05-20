@@ -4,6 +4,8 @@ public interface ModelLocalizationService {
 
     public String getArmorNameString(final String name);
 
+    public String getEquipmentNameString(final String name);
+
     public String getFactionNameString(final String name);
 
     public String getMutationNameString(final String name);
