@@ -2,7 +2,7 @@ package com.wandrell.tabletop.punkapocalyptic.procedure;
 
 import com.wandrell.tabletop.punkapocalyptic.model.unit.Gang;
 import com.wandrell.tabletop.punkapocalyptic.procedure.event.GangBuilderStatusChangedListener;
-import com.wandrell.tabletop.stat.valuebox.ValueBox;
+import com.wandrell.tabletop.stats.valuebox.ValueBox;
 
 public interface GangBuilderManager extends ValidatedProcedure {
 
