@@ -12,7 +12,8 @@ public interface FactionUnitAvailabilityRepository extends
     public Collection<FactionUnitAvailability> getAvailabilitiesForFaction(
             final String faction);
 
-    public FactionUnitAvailability getAvailabilityForUnit(final String unit);
+    public FactionUnitAvailability getAvailabilityForUnit(final String faction,
+            final String unit);
 
     public Collection<UnitTemplate> getUnitsForFaction(final String faction);
 
