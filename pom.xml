@@ -114,7 +114,6 @@
 		<tabletop.stats.version>0.1.0-SNAPSHOT</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
-		<wandrell.version>0.1.0-SNAPSHOT</wandrell.version>
 		<!-- Plugins versions -->
 		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
 		<plugin.compiler.version>3.2</plugin.compiler.version>
@@ -150,12 +149,6 @@
 	</repositories>
 
 	<dependencies>
-		<dependency>
-			<!-- Java Util -->
-			<groupId>com.wandrell</groupId>
-			<artifactId>java-utils</artifactId>
-			<version>${wandrell.version}</version>
-		</dependency>
 		<dependency>
 			<!-- Tabletop's Punkapocalyptic API -->
 			<groupId>com.wandrell.tabletop</groupId>
